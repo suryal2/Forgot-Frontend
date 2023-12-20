@@ -44,8 +44,12 @@ setFormData({...formData, [name]: value });
 
 
   return (
-     <Container>
-        <h1>Registeration Form</h1>
+    <div className="sin">
+         <img id="sinImg" src="./img/sign.jpeg" alt="sign imag"></img>
+     <Container id="cslog">
+    
+  
+        <h3>  Welcome!</h3>
         <Form onSubmit={handleSubmit}>
             <Form.Group>
                 <Form.Label>Name</Form.Label>
@@ -76,11 +80,13 @@ setFormData({...formData, [name]: value });
                 onChange={handleChange} 
                 required /> 
             </Form.Group>
-            <Button variant="primary" type="submit">Register</Button>
-            <p>Already have an account?  <Link to="/login">Login</Link> </p>
+            <Button variant="primary" type="submit"> Sign Up</Button>
+            <p>Don't have an account? <Link to="/login">Login</Link> </p>
           
         </Form>
+      
      </Container>
+     </div>
   )
 }
 
